@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://sanyamx:dunksin33@cluster0.mbf7ter.mongodb.net/todolistDB');
+// mongoose.connect('mongodb+srv://sanyamx:dunksin33@cluster0.mbf7ter.mongodb.net/todolistDB');
 
 const itemsSchema = new mongoose.Schema({
   name: String
@@ -147,6 +147,6 @@ connectDB().then(() => {
     console.log(`Listening on port ${PORT}`)
   });
 })
-app.listen(3000, function () {
-  console.log("Server started on port 3000");
-});
+// app.listen(3000, function () {
+//   console.log("Server started on port 3000");
+// });
